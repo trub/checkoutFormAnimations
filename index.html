@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Form Field Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+      <form id="sign-up" class="sign-up">
+        <fieldset>
+          <legend>Checkout interactions</legend>
+          <ul>
+            <li>
+              <label for="first-name">First Name:</label>
+              <input id="first-name" type="text" required autofocus>
+            </li>
+
+            <li>
+              <label for="last-name">Last Name:</label>
+              <input id="last-name" type="text" required>
+            </li>
+
+            <li>
+              <label for="text">Card Number:</label>
+               <input id="text" type="text" pattern=".{16,20}" title="Your card number is not correct" required>
+            </li>
+
+            <li>
+              <label for="text1">MM/YY</label>
+              <input id="text1" type="text" pattern=".{5}" title="Please enter the month / year" required>
+
+            </li>
+
+            <li>
+              <label for="text2">CVV:</label>
+              <input id="text2" type="text" pattern=".{3}" title="Your CVV code is not correct" required>
+
+            </li>
+
+            <li>
+              <label for="text3">Zip Code:</label>
+              <input id="text3" type="text" pattern=".{5,6}" title="Your zip code is not correct" required>
+
+            </li>
+            <li>
+              <button id="submit" type="submit" class="full-width">Pay: {Total Amount}</button>
+            </li>
+            <p class="paaySign">Checkout powered by <strong style="color: #a2cb47;">PAAY</strong></p>
+          </ul>
+        </fieldset>
+      </form>
+
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
